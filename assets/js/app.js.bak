@@ -1,0 +1,18 @@
+var cl = console.log; 
+
+var str = "   I love javaScript, always like javaScript and javaScript is  a awesome scripting language     ";
+
+function countVar(x, y)
+{
+	var arr = x.split('');
+	arr.forEach(function(nstr)
+	{
+		// if(nstr.indexOf(y) > -1)
+		if(nstr === y)
+		{
+			cl(nstr);
+		}
+	})
+}
+countVar(str, "l");
+
